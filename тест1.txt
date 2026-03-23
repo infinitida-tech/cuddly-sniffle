@@ -1,1 +1,19 @@
 климочкина дарья
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+void main()
+{ 
+  double x, a, b, h, y;
+  system("chcp 1251");
+  printf("Введите границы интервала и шаг через пробел \n");
+  scanf("%lf%lf%lf", &a, &b, &h);
+  x = a;
+  while (x <= b)
+  {
+    y = pow(x, 2);
+    printf("x = %lf, y = %lf \n", x, y);
+    x += h;
+  }
+}
